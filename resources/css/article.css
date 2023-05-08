@@ -1,0 +1,28 @@
+.kala-articlePage-box{
+    width: 1550px;
+    height: 2000px;
+    transition: 0.3s;
+}
+.kala-articlePage-box-right-textBox{
+    width: 80%;
+}
+.kala-articlePage-box-right-textBox-product{
+    display: none;
+}
+@media (max-width: 1600px) {
+    .kala-articlePage-box{
+        width: 97% !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    .kala-articlePage-box-left{
+        display: none;
+    }
+    .kala-articlePage-box-right-textBox{
+        width: 97%;
+    }
+    .kala-articlePage-box-right-textBox-product{
+        display: block;
+    }
+}

@@ -1,0 +1,552 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    scrollbar-width:thin;
+    scrollbar-color: #c7c7c7 transparent;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #d8d8d8;
+    border-radius: 10px;
+}
+.kala-header-box{
+    width: 100% !important;
+    position: fixed;
+    z-index: 999;
+}
+.kala-header-box-meno{
+    margin: auto;
+    width: 1600px!important;
+}
+.kala-header-menu-togle-box{
+    margin: auto;
+    width: 1600px!important;
+    height: 38px;
+}
+.kala-header-admin{
+
+    height: 40px;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    top: -32px;
+    border-radius: 0 0 15px 15px ;
+    transition: 0.3s;
+    color: black;
+}
+.kala-header-admin:hover{
+    top: 0;
+}
+.kala-header-meno-box{
+    width: 100%;
+}
+.kala-header-box-banner{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kala-header-box-banner-picture{
+    height: 100%;
+}
+.kala-header-box-meno-main{
+    height: 70px;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.kala-header-box-meno-main-logo{
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    height: 100%;
+}
+.kala-header-box-meno-main-search{
+    float: right;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.kala-header-box-meno-main-login{
+    width: 230px;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+.kala-header-box-meno-main-login-box{
+    width: 150px;
+    height: 100%;
+    float: right;
+}
+.kala-header-box-meno-main-basket-box{
+    width: 80px;
+    height: 28px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kala-header-box-meno-main-login-box-main{
+    padding: 4px;
+    background-color: white;
+    float: left;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kala-header-box-meno-main-login-box-drop{
+    width: 230px;
+}
+.kala-header-box-meno-main-basket-box-into{
+    cursor: pointer;
+    position: relative;
+}
+.kala-header-box-meno-main-basket-box-num{
+    padding: 9px;
+    height: 1px ;
+    width: 1px ;
+    border-radius: 50% ;
+    left: 18px ;
+    top: 18px ;
+    font-size: 12px;
+    border: 2px solid white;
+}
+.kala-header-box-miniMuno{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: white;
+    border-bottom: 1px solid #f4f4f4;
+}
+.kala-header-search-box-facke{
+    background-color: rgba(0, 0, 0, 0.32);
+    display: none ;
+    width: 100% ;
+    height: 100vh  ;
+    position: fixed;
+    z-index: 999;
+}
+.kala-header-search-box-fackemeno{
+    background-color: rgba(0, 0, 0, 0.32);
+    display: none ;
+    width: 100% ;
+    height: 100vh  ;
+    position: fixed;
+    z-index: 99;
+}
+.kala-header-searcher{
+    width: 100%;
+    height: 300px;
+    top: 0;
+    border-radius: 8px;
+    display: none;
+    align-items: start;
+    justify-content: start;
+    transition: 0.3s;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+}
+.kala-search-into{
+    border-bottom: 1px solid #00c6da;
+}
+.kala-header-box-meno-main-search-into{
+    width: 100% !important;
+    height: 42px!important;
+    border-radius: 8px;
+    background-color: #efefef;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.footer-phone{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    border-top:1px solid #dfdfdf;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+.footer-phone-icon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+    color: #686868;
+    cursor: pointer;
+    text-decoration: none;
+}
+.icon{
+    color: #6f6f6f;
+    transition: 0.2s;
+}
+.icon:hover{
+    color: #c00025;
+}
+.kala-CloseBtn{
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+
+
+.kala-header-menu-togle{
+    width: 100%;
+    height: 42px;
+    background-color: white;
+    position: fixed;
+    transition: 0.2s;
+    border-bottom: 2px solid #e1e1e1;
+    z-index: 99;
+    top: 130px;
+}
+.kala-header-menu-togle-list{
+    width: 155px;
+    height: 38px;
+    float: right;
+    transition: 0.3s;
+}
+.kala-header-menu-togle-list-0{
+    width: 55vw;
+    height: 470px;
+    display: none;
+    top: 172px;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    z-index: 9999;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+
+.kala-header-menu-togle-list-0-box{
+    width: 210px;
+    height: 100%;
+    cursor: pointer;
+    overflow: scroll;
+    border-left: 1px solid #efefef;
+    scrollbar-width:thin;
+    scrollbar-color: #eaeaea transparent;
+}
+.kala-header-menu-togle-list-0-box::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.kala-header-menu-togle-list-menu-box{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: 0.3s;
+    color: #646464;
+    text-decoration: none;
+    /*position: relative;*/
+
+
+}
+.kala-header-menu-togle-list-menu-box:hover{
+    background-color: #f3f3f3;
+    color: #ec0000!important;
+}
+
+.kala-header-menu-togle-list-menu-box:hover .kala-header-menu-togle-list-menu-item{
+    color: #ec0000!important;
+}
+
+
+.kala-header-menu-togle-sopermarket{
+    width: 110px;
+    height: 38px;
+    float: right;
+
+}
+.kala-header-menu-togle-much{
+    width: 125px;
+    height: 38px;
+    float: right;
+}
+.kala-header-menu-togle-off{
+    width: 160px;
+    height: 38px;
+    float: right;
+}
+.kala-header-menu-togle-super{
+    width: 105px;
+    height: 38px;
+    float: right;
+}
+.kala-header-menu-togle-seller{
+    width: 150px;
+    height: 38px;
+    float: right;
+    border-right: 1px solid #dfdfdf;
+}
+.text-color{
+    color: #747474;
+    text-decoration: black;
+    cursor: pointer;
+}
+.text-color:hover{
+    color: #747474;
+}
+.kala-header-menu-togle-under{
+    width: 800px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+}
+.kala-header-menu-togle-under-into{
+    width: 0;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    transition: 0.3s;
+    right: 1px;
+}
+.kala-header-menu-togle-addres{
+    width: 205px;
+    height: 38px;
+    float: left;
+}
+.kala-header-box-meno-main-login-box-drop-in{
+    transition: 0.3s;
+}
+.kala-header-menu-togle-list-0-background {
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    right: 200px;
+    top: -15px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.kala-header-menu-togle-list-0-background::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+
+
+.kala-header-listSmall-box{
+    display: none;
+}
+
+/*fooetr*/
+.kala-footer{
+    width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.kala-goTopBtn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kala-goTopBtn2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1600px) {
+    .kala-superCategories{
+        width: 97%;
+    }
+
+    .kala-header-box-meno{
+        width: 100% !important;
+    }
+
+    .kala-header-menu-togle-box{
+        width: 100%!important;
+    }
+
+    /*fooetr*/
+    .kala-footer{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+    .kala-header-meno-box {
+        border-bottom: 2px solid #e3e3e3;
+    }
+
+    .kala-header-box-banner {
+        height: 35px !important;
+    }
+
+    .kala-header-center {
+        height: 55px !important;
+    }
+
+    .kala-header-logo-box {
+        display: none !important;
+    }
+
+    .kala-header-facke {
+        display: none !important;
+    }
+
+    .kala-header-box-banner-picture {
+        height: 105%;
+    }
+
+    .kala-header-box-miniMuno {
+        display: flex;
+    }
+
+    .kala-header-box-meno-main-logo {
+        display: none;
+    }
+
+    .kala-header-box-meno-main-search-into {
+        position: unset;
+    }
+
+    .kala-header-searcher {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        display: none;
+        align-items: start;
+        justify-content: start;
+        margin-right: -30px;
+    }
+
+    .kala-header-menu-togle {
+        display: none;
+    }
+
+
+    .kala-header-menu-togle-list-0 {
+        width: 310px;
+        display: none;
+        right: -310px;
+        top: 0;
+        height: 100%;
+        z-index: 99999;
+        transition: 0.3s;
+        border-radius: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        overflow: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #b0b0b0 transparent;
+    }
+
+    .kala-header-search-box-fackemeno {
+        /*display: block;*/
+        z-index: 99999;
+    }
+
+    .kala-header-menu-togle-list-0-background {
+        display: none;
+    }
+
+    .kala-header-menu-togle-list-0-box {
+        display: none;
+        overflow: scroll;
+    }
+
+    .kala-header-menu-togle-list-0-box::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+
+    .kala-header-listSmall-box {
+        display: block;
+    }
+
+    .kala-upSlider{
+        height: 130px!important;
+    }
+}
+
+@media (max-width: 800px) {
+    /*fooetr*/
+    .kala-footer{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .kala-goTopBtn1{
+        display: none;
+    }
+    .kala-goTopBtn2{
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .kala-header-box-banner{
+        display: none;
+    }
+    .kala-header-box-miniMuno{
+        display: flex;
+    }
+    .kala-header-box-meno-main-login{
+        display: none;
+    }
+    .footer-phone{
+        display: flex;
+        z-index: 99999!important;
+    }
+
+    .kala-header-menu-togle-list-0{
+        width: 100%;
+    }
+
+
+    /*fooetr*/
+    .kala-footer-text{
+        margin-bottom: 50px;
+    }
+
+
+
+    .kala-upSlider{
+        height: 97px!important;
+    }
+}
+/*@media (max-width: 500px) {*/
+/*    .kala-upSlider{*/
+/*        height: 97px!important;*/
+/*    }*/
+/*}*/

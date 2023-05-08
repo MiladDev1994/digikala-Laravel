@@ -1,0 +1,242 @@
+.kala-buy-box{
+    width: 1550px;
+    display: flex;
+}
+.kala-buy-box-ax{
+    width: 34%;
+}
+.kala-buy-box-name{
+    width: 33%;
+}
+.kala-buy-box-price{
+    width: 33%;
+}
+.kala-buy-box-ax-ax{
+    width: 100%;
+}
+.kala-buy-box-ax-footer{
+
+}
+.inner-smoll{
+    display: none;
+}
+.mmmmm1{
+    display: block;
+}
+.kkkkk1{
+    display: none;
+}
+.otherSellerModalBTN{
+    display: none;
+}
+
+
+
+
+
+
+
+/*SimilarProducts*/
+.kala-Similar{
+    width: 1550px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.kala-Similar-Box{
+    height: 250px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+.kala-Similar-btnLeft{
+    left: -10px ;
+    top: 40% ;
+    z-index: 9 ;
+    border-radius: 50% ;
+    width: 46px ;
+    height: 46px;
+    display: flex;
+    cursor: pointer;
+}
+.kala-Similar-btnRight{
+    right: -10px ;
+    top: 40% ;
+    z-index: 0 ;
+    border-radius: 50% ;
+    width: 46px ;
+    height: 46px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.kala-Similar-Box-var{
+    width: 180px;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+/*comments*/
+.kala-comment-box{
+    width: 1550px;
+    min-height: 300px;
+    transition: 0.3s;
+}
+.kala-comment-box-add{
+    width: 250px;
+}
+.kala-comment-box-buy{
+    width: 250px;
+}
+.kala-comment-view{
+}
+
+
+
+
+
+.kala-buy-box-name-topFeeUnknown{
+    width: 80% ;
+    height: 530px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.kala-about-box{
+    width: 1550px;
+}
+.kala-about-text{
+    border-radius: 15px;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 80%;
+}
+
+
+
+@media (max-width: 1600px) {
+    .kala-buy-box{
+        width: 97%;
+    }
+
+    .kala-about-box{
+        width: 97%;
+    }
+
+
+    /*SimilarProducts*/
+    .kala-Similar{
+        width: 95%;
+    }
+
+    /*comments*/
+    .kala-comment-box{
+        width: 95%;
+    }
+    .SimilarProductsText{
+        width: 99% !important;
+        transition: 0.3s;
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .kala-buy-box-name-topFeeUnknown{
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .kala-buy-box-name-topFeeUnknown{
+        height: 480px;
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 1170px) {
+    .kala-buy-box-name-topFeeUnknown{
+        height: 430px;
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+    .kala-buy-box{
+        display: block;
+    }
+    .kala-buy-box-ax{
+        width: 100%;
+    }
+    .kala-buy-box-name{
+        width: 100%;
+    }
+    .kala-buy-box-price{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        bottom: -10px;
+        right: 0;
+    }
+    .kala-footer-main{
+        display: none;
+    }
+    /*.kala-buy-box-ax{*/
+    /*    width: 100%;*/
+    /*    height: 400px;*/
+    /*}*/
+    .inner-big{
+        display: none;
+    }
+    .inner-smoll{
+        display: block;
+    }
+    .kkkkk1{
+        display: block;
+    }
+    .mmmmm1{
+        display: none;
+    }
+    .otherSellerModalBTN{
+        display: block;
+    }
+    .kala-comment-box-buy{
+        display: none;
+    }
+    .facke{
+        display: block!important;
+        background-color: #3dd5f3;
+    }
+
+    .kala-buy-box-name-topFeeUnknown{
+        width: 100% ;
+        height: 100px;
+        border-radius: 0;
+        position: relative;
+        transition: 0.3s;
+    }
+
+}
+@media (max-width: 800px) {
+    .kala-comment-box-add{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .kala-buy-box-price{
+        bottom: 40px;
+    }
+    /*.kala-buy-box-price{*/
+    /*    bottom: -10px;*/
+    /*}*/
+}

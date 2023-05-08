@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #b70000;
+    border-radius: 10px;
+}
+
+.admin-box{
+    width: 1580px;
+}
+.admin-box-meno{
+    position: relative;
+    width: 250px;
+    transition: 0.3s;
+}
+.admin-box-meno-child{
+    position: sticky;
+    height: 628px;
+    width: 90%;
+    top: 70px;
+    border-radius: 15px;
+    background-color: #373737;
+    transition: 0.3s;
+    z-index: 99!important;
+    overflow: hidden;
+
+}
+.admin-box-meno-child-list{
+    height: 484px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.admin-box-meno-child-list::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.hover{
+    transition: 0.3s;
+}
+.hover:hover{
+    background-color: #515151!important;
+    cursor: pointer;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+
+@media (max-width: 1600px) {
+    .admin-box{
+        width: 99%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .admin-box-meno{
+        width: 0;
+        position: unset;
+    }
+    .admin-box-meno-child{
+        width: 225px;
+        position: fixed;
+        /*right: -250px;*/
+    }
+    .adminListIcon{
+        display: block!important;
+    }
+    .admin-box-meno-child-close{
+        display: block!important;
+    }
+}
+@media (max-width: 600px) {
+    .admin-box-meno-child{
+        width: 100%;
+    }
+
+}

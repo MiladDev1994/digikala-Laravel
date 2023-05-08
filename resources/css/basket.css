@@ -1,0 +1,94 @@
+.basket-box{
+    width: 1260px;
+    display: flex;
+}
+.changeFee{
+    animation: changeFee 0.3s alternate infinite;
+    box-shadow: 0 0 5px red;
+}
+
+@keyframes changeFee {
+    100%{box-shadow: 0 0 0 red;}
+}
+
+
+
+
+.basket-box-sumBuy{
+    position: relative;
+    width: 300px;
+}
+.basket-box-sumBuy-into{
+    position: sticky;
+    width: 98% ;
+    border-radius: 15px ;
+    height: 280px ;
+    top: 180px;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.fakeUnderBasket{
+    height: 130px;
+    display: none;
+}
+.basket-box-sumBuy-into-FirstChils-1{
+    padding: 10px 0;
+}
+
+
+
+@media (max-width: 1300px) {
+    .basket-box{
+        width: 97%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .basket-box{
+        flex-direction: column;
+        padding: 0!important;
+    }
+    .basket-box-sumBuy{
+        position: unset!important;
+        width: 0;
+        background-color: #0dcaf0;
+    }
+    .basket-box-sumBuy-into{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0;
+        height: 120px;
+        top: unset;
+        right: 0;
+        flex-direction: row;
+        direction: ltr;
+
+    }
+    .basket-box-sumBuy-into-FirstChils{
+        direction: rtl;
+        width: 300px !important;
+    }
+    .basket-box-sumBuy-into-LastChils{
+        width: 30% !important;
+    }
+
+    .basket-box-sumBuy-into-FirstChils-1{
+        padding: 0 30px;
+    }
+    .fakeUnderBasket{
+        display: block;
+    }
+
+    .kala-footer-main{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .basket-box-sumBuy-into{
+        bottom: 50px;
+    }
+    .fakeUnderBasket{
+        height: 160px;
+    }
+}

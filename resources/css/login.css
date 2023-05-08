@@ -1,0 +1,16 @@
+
+form{
+    width: 400px!important;
+    transition: 0.3s;
+    border: 1px solid #e80000 !important;
+    border-radius: 10px!important;
+}
+@media (max-width: 550px) {
+    form{
+        width: 100%!important;
+        height: 100%;
+        border: 0 solid #e80000 !important;
+    }
+
+}
+

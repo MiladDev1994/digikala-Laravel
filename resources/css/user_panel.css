@@ -1,0 +1,128 @@
+.user-box{
+    width: 1280px;
+    display: flex;
+}
+.user-box-right{
+    width: 300px;
+    position: relative;
+}
+.user-box-left{
+    /*margin: auto;*/
+}
+.user-box-right-too{
+    width: 95%;
+    border-radius: 15px;
+    position: sticky;
+    top: 180px;
+}
+.user-box-left-too{
+    border-radius: 15px;
+}
+.user-box-left-too-downBox{
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+/*SimilarProducts*/
+.kala-Similar{
+    width: 96%;
+    transition: 0.3s;
+}
+
+.kala-Similar-Box{
+    height: 250px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+.kala-Similar-btnLeft{
+    left: -10px ;
+    top: 40% ;
+    z-index: 9 ;
+    border-radius: 50% ;
+    width: 46px ;
+    height: 46px;
+    display: flex;
+    cursor: pointer;
+}
+.kala-Similar-btnRight{
+    right: -10px ;
+    top: 40% ;
+    z-index: 0 ;
+    border-radius: 50% ;
+    width: 46px ;
+    height: 46px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.kala-Similar-Box-var{
+    width: 180px;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+
+@media (max-width: 1600px) {
+
+    /*SimilarProducts*/
+    .kala-Similar{
+        width: 95%;
+    }
+
+}
+@media (max-width: 1300px) {
+    .user-box{
+        width: 98%;
+    }
+}
+@media (max-width: 1023px) {
+    .kala-footer-main{
+        display: none;
+    }
+
+
+    .user-box{
+        flex-direction: column;
+    }
+    .user-box-right{
+        width: 100%;
+        position: unset;
+    }
+    .user-box-right-too{
+        width: 95%;
+        border-radius: 15px;
+        position: unset;
+        top: 0;
+    }
+    .user-box-left{
+        margin: auto;
+        margin-top: 8px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
